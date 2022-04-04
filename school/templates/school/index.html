@@ -1,0 +1,9 @@
+{% if classes %}
+    <ul>
+    {% for class in classes %}
+        <li><a href="/school/{{class.id}}/">{{ class }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No classes are available</p>
+{% endif %}
